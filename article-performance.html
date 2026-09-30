@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A grounded first checklist for improving website performance without introducing unnecessary complexity." /><meta name="theme-color" content="#09090b" />
+    <title>A practical first pass at a faster website — Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" /><script src="site.js" defer></script><script src="script.js" defer></script>
+  </head>
+  <body data-page="article-performance">
+    <a class="skip-link" href="#main">Skip to content</a><div class="scroll-progress" aria-hidden="true"></div><header class="site-header" id="site-header"></header>
+    <main id="main" class="page-shell article-page">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="blog.html">Journal</a><span>/</span><span aria-current="page">Performance</span></nav>
+      <article>
+        <header class="article-heading"><p class="eyebrow"><span class="status-dot"></span> Performance · 5 min read</p><h1>A practical first pass at a <span class="accent-text">faster website.</span></h1><p class="page-lede">A useful performance improvement starts with finding the actual bottleneck—not installing another optimization plugin by default.</p><p class="article-byline">A practical field note <span>·</span> Review date: 2026</p></header>
+        <div class="article-prose">
+          <p>Performance is experienced by people, not just measured by a score. A page that responds quickly, stays stable as it loads, and makes its main content available early feels better to use.</p>
+          <h2>Measure a representative page</h2>
+          <p>Check a few real pages on mobile and desktop. Look at the main content’s loading, layout shifts, and interaction responsiveness. A homepage score alone may hide slower product, article, or contact pages.</p>
+          <h2>Right-size the images</h2>
+          <p>Use image dimensions that match the display area, choose modern formats when your publishing workflow supports them, and avoid loading a large original where a smaller derivative will do. Keep meaningful alternative text for informative images.</p>
+          <h2>Remove unnecessary work</h2>
+          <p>Review third-party scripts, duplicate plugins, heavy animation, and resources loaded site-wide that only one page needs. Remove what the site no longer uses and measure again.</p>
+          <h2>Protect layout stability</h2>
+          <p>Reserve space for images, embeds, and other content that arrives later. Avoid unexpected font swaps and injected content that pushes the page around while someone is reading.</p>
+          <h2>Check the result under real conditions</h2>
+          <p>Test with a slower connection and a mid-range device if possible. Compare the same pages before and after each meaningful change; performance wins should not come at the cost of accessibility or functionality.</p>
+          <aside class="article-callout">A reliable baseline and one measured fix beat a stack of untested optimizations.</aside>
+        </div>
+      </article>
+      <nav class="article-pagination" aria-label="More articles"><a href="article-wordpress-content.html">Previous article <span aria-hidden="true">↗</span></a><a href="blog.html">All notes <span aria-hidden="true">↗</span></a></nav>
+    </main><footer class="site-footer" id="site-footer"></footer>
+  </body>
+</html>

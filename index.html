@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Alex Morgan is a product designer and front-end developer creating thoughtful digital experiences."
+      content="Independent WordPress developer building fast, accessible, and easy-to-manage websites for growing businesses."
     />
-    <meta name="theme-color" content="#10110f" />
-    <title>Alex Morgan — Designer & Developer</title>
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0b0b0e" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Independent WordPress Developer — Digital experiences, built to grow" />
+    <meta
+      property="og:description"
+      content="WordPress websites, WooCommerce stores, and thoughtful improvements for growing businesses."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Independent WordPress Developer — Digital experiences, built to grow</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="site.js" defer></script>
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body data-page="home">
     <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <nav class="nav-shell" aria-label="Main navigation">
-        <a class="wordmark" href="#home" aria-label="Alex Morgan, home">am<span>.</span></a>
+        <a class="wordmark" href="#home" aria-label="Independent developer, home">web<span>.</span></a>
 
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
           <span class="sr-only">Open navigation menu</span>
@@ -33,8 +43,9 @@
 
         <div class="nav-links" id="primary-nav">
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Work</a>
+          <a href="#approach">Approach</a>
           <a href="#contact">Contact</a>
           <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
             <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
@@ -52,169 +63,413 @@
     <main id="main">
       <section class="hero section-shell" id="home" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Independent designer & developer</p>
-          <h1 id="hero-title">I make digital<br />feel <span class="accent-text">human.</span></h1>
-          <p class="hero-intro">
-            Hey, I’m Alex — a product designer and front-end developer turning complex ideas into
-            clear, thoughtful experiences.
-          </p>
+          <p class="eyebrow hero-availability"><span class="status-dot"></span> AVAILABLE FOR SELECT PROJECTS</p>
+          <h1 id="hero-title">Websites built<br />to <span class="accent-text">move you</span><br />forward.</h1>
+          <p class="hero-intro"><strong>Hi, I’m Mehbub Hossen Fahim</strong> — a WordPress &amp; Web Developer creating fast, thoughtful websites that help businesses grow online.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#contact">Let’s talk <span aria-hidden="true">→</span></a>
+            <a class="button button-primary magnetic-target" href="projects.html">View My Work <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="contact.html">Let’s Work Together <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="hero-meta">
-            <span>Based in Brooklyn, NY</span>
-            <span class="meta-divider" aria-hidden="true"></span>
-            <span>Available for select projects</span>
+          <p class="hero-supporting-line"><span>WordPress</span><i></i><span>WooCommerce</span><i></i><span>Custom websites</span></p>
+        </div>
+
+        <div class="hero-card-stack" data-hero-card-stack aria-hidden="true">
+          <div class="hero-stack-panel hero-stack-panel-back hero-stack-metrics">
+            <span class="hero-stack-label">PORTFOLIO</span>
+            <strong>06</strong>
+            <span class="hero-stack-caption">Website concepts</span>
+            <span class="hero-stack-mini-bars"><i></i><i></i><i></i><i></i></span>
+          </div>
+          <div class="hero-stack-panel hero-stack-panel-mid hero-stack-featured">
+            <span class="hero-stack-label">FEATURED CONCEPT</span>
+            <span class="hero-stack-featured-mark" aria-hidden="true">N.</span>
+            <strong>Northline Studio</strong>
+            <span class="hero-stack-caption">Brand website · WordPress</span>
+            <span class="hero-stack-mini-link">VIEW PROJECT <b>↗</b></span>
+          </div>
+          <div class="hero-stack-panel hero-stack-panel-front hero-stack-code">
+            <span class="hero-stack-code-top"><i></i><i></i><i></i><span>site-build.js</span></span>
+            <span class="hero-stack-code-line"><b>01</b><code><em>const</em> website = {</code></span>
+            <span class="hero-stack-code-line"><b>02</b><code>  fast: <i>true</i>,</code></span>
+            <span class="hero-stack-code-line"><b>03</b><code>  responsive: <i>true</i>,</code></span>
+            <span class="hero-stack-code-line"><b>04</b><code>  madeFor: <u>your growth</u></code></span>
+            <span class="hero-stack-code-line"><b>05</b><code>};</code></span>
           </div>
         </div>
 
-        <div class="hero-art" aria-label="Abstract illustration of a creative workspace">
-          <div class="art-orbit orbit-one"></div>
-          <div class="art-orbit orbit-two"></div>
-          <div class="art-sun"></div>
-          <div class="art-card">
-            <span class="art-card-label">CURRENTLY INTO</span>
-            <span class="art-card-title">Good ideas.<br />Better details.</span>
-            <span class="art-card-footer">DESIGN / CODE / COFFEE</span>
-          </div>
-          <span class="art-spark spark-one" aria-hidden="true">✳</span>
-          <span class="art-spark spark-two" aria-hidden="true">✳</span>
-          <span class="art-caption">A LITTLE BIT OF BOTH, ALWAYS.</span>
-        </div>
-        <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+        <a class="scroll-cue" href="#about"><span></span> Scroll to explore <span class="scroll-cue-index">01 — 07</span></a>
       </section>
 
+      <div class="marquee-band" role="region" aria-label="Portfolio statement">
+        <div class="marquee-track" aria-hidden="true">
+          <span>BUILD WITH INTENT <i>✳</i> WORDPRESS, WITHOUT THE FRICTION <i>✳</i> GOOD DETAILS MAKE A DIFFERENCE <i>✳</i></span>
+          <span>BUILD WITH INTENT <i>✳</i> WORDPRESS, WITHOUT THE FRICTION <i>✳</i> GOOD DETAILS MAKE A DIFFERENCE <i>✳</i></span>
+        </div>
+        <button class="marquee-toggle" type="button" aria-pressed="false" aria-label="Pause moving text">Pause motion</button>
+      </div>
+
       <section class="about section-shell section-block" id="about" aria-labelledby="about-title">
-        <div class="section-kicker"><span>01</span> A little about me</div>
+        <div class="section-kicker"><span>01</span> Built for your next step</div>
         <div class="about-content">
-          <h2 id="about-title">Curious by nature.<br /><span class="muted-text">Intentional by design.</span></h2>
+          <h2 id="about-title">A better website<br /><span class="muted-text">starts with listening.</span></h2>
           <div class="about-copy">
             <p>
-              I work at the intersection of design and technology, partnering with good people to
-              make digital products that are useful, intuitive, and a joy to use.
+              Your website should do more than look good. It should make your offer clear, feel effortless to use, and help turn the right visitors into customers.
             </p>
             <p>
-              From the first sketch to the final line of code, I care about the details — and the
-              bigger picture they add up to. When I’m not at my desk, you’ll find me wandering a
-              bookstore or trying a new pasta recipe.
+              I create considered WordPress experiences with responsive layouts, accessible interactions, and an editing experience your team can manage without calling a developer for every update.
             </p>
-            <a class="text-link" href="#contact">A bit more about working together <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#approach">See how I work <span aria-hidden="true">→</span></a>
           </div>
+        </div>
+      </section>
+
+      <section class="trust-strip section-shell" aria-label="Development principles">
+        <div><span>01</span><strong>Easy to manage</strong><p>Update your own content</p></div>
+        <div><span>02</span><strong>Built responsively</strong><p>Designed for every screen</p></div>
+        <div><span>03</span><strong>Performance-minded</strong><p>Lean, considered development</p></div>
+        <div><span>04</span><strong>Made to be found</strong><p>SEO-friendly foundations</p></div>
+      </section>
+
+      <section class="quality section-shell section-block" aria-labelledby="quality-title">
+        <div class="section-kicker"><span>02</span> The details behind a good build</div>
+        <div class="skills-heading">
+          <h2 id="quality-title">Built with care.<br /><span class="accent-text">Ready for real life.</span></h2>
+          <p>Thoughtful decisions in the design, development, and handover make your website more useful day to day.</p>
+        </div>
+        <div class="quality-grid">
+          <article class="quality-card"><span class="quality-number">01 / ACCESS</span><h3>Accessible by default</h3><p>Semantic structure, keyboard-friendly controls, visible focus, and readable contrast.</p></article>
+          <article class="quality-card"><span class="quality-number">02 / EDIT</span><h3>Comfortable to manage</h3><p>Reusable content patterns and editor controls shaped around the updates your team makes.</p></article>
+          <article class="quality-card"><span class="quality-number">03 / SPEED</span><h3>Lean where it counts</h3><p>Performance considered from the start, with image and script choices guided by measurement.</p></article>
+          <article class="quality-card"><span class="quality-number">04 / LAUNCH</span><h3>Ready to hand over</h3><p>Responsive review, key journey checks, and a clear explanation of the site you now own.</p></article>
         </div>
       </section>
 
       <section class="skills section-shell section-block" id="skills" aria-labelledby="skills-title">
-        <div class="section-kicker"><span>02</span> What I bring</div>
+        <div class="section-kicker"><span>03</span> Capabilities</div>
         <div class="skills-heading">
-          <h2 id="skills-title">Thoughtful from<br />start to <span class="accent-text">ship.</span></h2>
-          <p>A small, versatile toolkit for turning a good question into a great experience.</p>
+          <h2 id="skills-title">The right tools<br />for a <span class="accent-text">better web.</span></h2>
+          <p>Practical, maintainable technology choices, selected to fit the needs of your project.</p>
         </div>
         <div class="skill-grid">
           <article class="skill-card">
             <span class="skill-number">01</span>
-            <h3>Product design</h3>
-            <p>Finding the signal in the noise, then shaping it into something people love using.</p>
-            <ul><li>UX research</li><li>Product strategy</li><li>Prototyping</li></ul>
+            <h3>WordPress</h3>
+            <p>Flexible, editor-friendly websites built around your content and day-to-day workflow.</p>
+            <ul><li>Gutenberg</li><li>Custom themes</li><li>Custom blocks</li></ul>
           </article>
           <article class="skill-card">
             <span class="skill-number">02</span>
-            <h3>Visual design</h3>
-            <p>Building expressive, consistent interfaces with a little personality baked in.</p>
-            <ul><li>Design systems</li><li>Art direction</li><li>Interaction design</li></ul>
+            <h3>Online stores</h3>
+            <p>Clear shopping journeys and dependable store experiences for your customers.</p>
+            <ul><li>WooCommerce</li><li>Checkout</li><li>Store setup</li></ul>
           </article>
           <article class="skill-card">
             <span class="skill-number">03</span>
-            <h3>Development</h3>
-            <p>Bringing ideas to life with clean, accessible code that works everywhere.</p>
-            <ul><li>HTML & CSS</li><li>JavaScript</li><li>Responsive UI</li></ul>
+            <h3>Web foundations</h3>
+            <p>Accessible, responsive frontend code with a focus on speed and maintainability.</p>
+            <ul><li>HTML & CSS</li><li>JavaScript</li><li>Git</li></ul>
           </article>
+        </div>
+        <a class="text-link section-more" href="skills.html">Explore skills and tools <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="services section-shell section-block" id="services" aria-labelledby="services-title">
+        <h2 class="services-display-title" id="services-title">SERVICES</h2>
+        <div class="services-list">
+          <a class="service-row" href="service-wordpress.html">
+            <span class="service-row-number">01</span>
+            <span class="service-row-copy"><strong>WORDPRESS WEBSITES</strong><span>Custom, responsive websites with a flexible editing experience your team can manage.</span></span>
+            <span class="service-row-kind">WORDPRESS</span>
+          </a>
+          <a class="service-row" href="service-woocommerce.html">
+            <span class="service-row-number">02</span>
+            <span class="service-row-copy"><strong>WOOCOMMERCE STORES</strong><span>Product discovery, store structure, and checkout shaped around your customers.</span></span>
+            <span class="service-row-kind">COMMERCE</span>
+          </a>
+          <a class="service-row" href="service-redesign.html">
+            <span class="service-row-number">03</span>
+            <span class="service-row-copy"><strong>REDESIGN & OPTIMIZATION</strong><span>A clearer, more accessible experience and a performance-minded refresh.</span></span>
+            <span class="service-row-kind">REDESIGN</span>
+          </a>
+          <a class="service-row" href="service-maintenance.html">
+            <span class="service-row-number">04</span>
+            <span class="service-row-copy"><strong>FIXES & MAINTENANCE</strong><span>Practical help diagnosing issues and keeping your WordPress site in good shape.</span></span>
+            <span class="service-row-kind">SUPPORT</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="past-collabs section-shell section-block" aria-labelledby="collabs-title">
+        <div class="collabs-heading">
+          <h2 id="collabs-title">PAST COLLABS</h2>
+        </div>
+        <p class="collabs-note">Practice concepts only — these fictional brand names are not client collaborations.</p>
+        <div class="collabs-list">
+          <div class="collab-row"><span class="collab-number">01</span><div class="collab-name">Fieldnotes Studio<span>Brand story + WordPress site</span></div><span class="collab-kind">WORDPRESS CONCEPT</span></div>
+          <div class="collab-row"><span class="collab-number">02</span><div class="collab-name">Goodgoods<span>Storefront + product journey</span></div><span class="collab-kind">COMMERCE CONCEPT</span></div>
+          <div class="collab-row"><span class="collab-number">03</span><div class="collab-name">Northline<span>Architecture portfolio + project stories</span></div><span class="collab-kind">WORDPRESS CONCEPT</span></div>
+          <div class="collab-row"><span class="collab-number">04</span><div class="collab-name">Morrow Ritual<span>Product pages + shopping flow</span></div><span class="collab-kind">COMMERCE CONCEPT</span></div>
+          <div class="collab-row"><span class="collab-number">05</span><div class="collab-name">Civic Commons<span>Community stories + clearer navigation</span></div><span class="collab-kind">REDESIGN CONCEPT</span></div>
         </div>
       </section>
 
       <section class="projects section-shell section-block" id="projects" aria-labelledby="projects-title">
-        <div class="section-kicker"><span>03</span> Selected work</div>
-        <div class="projects-heading">
-          <h2 id="projects-title">A few things<br /><span class="muted-text">I’ve put out there.</span></h2>
-          <span class="project-count">2022 — 2025</span>
-        </div>
+        <h2 class="projects-display-title" id="projects-title">PROJECT</h2>
         <div class="project-grid">
-          <article class="project-card project-large">
-            <a class="project-visual project-visual-one" href="#contact" aria-label="Discuss the Fieldnotes project">
-              <div class="fieldnotes-window">
-                <span class="mock-label">fieldnotes</span>
-                <span class="mock-headline">Make room<br />for wonder.</span>
-                <span class="mock-link">A calmer way to plan <span aria-hidden="true">↗</span></span>
-                <div class="mock-shape"></div>
-              </div>
-              <span class="project-arrow" aria-hidden="true">↗</span>
-            </a>
-            <div class="project-details">
-              <div><h3>Fieldnotes</h3><p>A softer kind of productivity</p></div>
-              <span class="project-type">Product design · 2025</span>
+          <article class="project-card project-large" data-category="wordpress" data-project-title="Studio WordPress concept" data-project-kind="WordPress" data-project-summary="A flexible, editorial home for a creative business that needs to explain its point of view and make its work easy to explore." data-project-focus="Clear service storytelling, expressive typography, and reusable WordPress content sections.">
+            <div class="project-card-head"><span class="project-number">01</span><div class="project-client-label"><span>WORDPRESS CONCEPT</span><strong>FIELDNOTES STUDIO</strong></div><button class="project-quick-view" type="button">VIEW CONCEPT <span aria-hidden="true">↗</span></button></div>
+            <div class="project-card-gallery">
+              <div class="project-gallery-rail" aria-hidden="true"><div class="project-gallery-shot project-shot-one"><span>THE STUDIO</span><strong>Make good work matter.</strong><i></i></div><div class="project-gallery-shot project-shot-two"><span>DESIGN / DEVELOPMENT</span><strong>Built around your next idea.</strong><i></i></div></div>
+              <a class="project-visual project-visual-one" href="project-studio.html" aria-label="View the studio WordPress project concept">
+                <div class="fieldnotes-window">
+                  <span class="mock-label">YOUR STUDIO</span>
+                  <span class="mock-headline">Make good<br />work matter.</span>
+                  <span class="mock-link">A flexible WordPress concept <span aria-hidden="true">↗</span></span>
+                  <div class="mock-shape"></div>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </a>
             </div>
           </article>
-          <article class="project-card">
-            <a class="project-visual project-visual-two" href="#contact" aria-label="Discuss the Goodkind project">
-              <div class="goodkind-mark">good<span>kind</span><sup>®</sup></div>
-              <span class="goodkind-caption">CARE, WITH A LITTLE MORE CARE.</span>
-              <span class="project-arrow" aria-hidden="true">↗</span>
-            </a>
-            <div class="project-details">
-              <div><h3>Goodkind</h3><p>Everyday care, reimagined</p></div>
-              <span class="project-type">Brand & web · 2024</span>
+          <article class="project-card" data-category="woocommerce" data-project-title="Everyday goods storefront" data-project-kind="WooCommerce" data-project-summary="A warm, considered storefront concept for everyday essentials, designed to help shoppers compare products and feel confident at checkout." data-project-focus="Product discovery, clear product details, and a straightforward shopping journey.">
+            <div class="project-card-head"><span class="project-number">02</span><div class="project-client-label"><span>WOOCOMMERCE CONCEPT</span><strong>GOODGOODS</strong></div><button class="project-quick-view" type="button">VIEW CONCEPT <span aria-hidden="true">↗</span></button></div>
+            <div class="project-card-gallery">
+              <div class="project-gallery-rail" aria-hidden="true"><div class="project-gallery-shot project-shot-three"><span>EVERYDAY ESSENTIALS</span><strong>Good goods. Good days.</strong><i></i></div><div class="project-gallery-shot project-shot-four"><span>MADE FOR DAILY USE</span><strong>Find your new favourite.</strong><i></i></div></div>
+              <a class="project-visual project-visual-two" href="project-store.html" aria-label="View the WooCommerce storefront project concept">
+                <div class="goodkind-mark">good<span>goods</span><sup>®</sup></div>
+                <span class="goodkind-caption">A STORE MADE FOR EVERYDAY ESSENTIALS.</span>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </a>
             </div>
           </article>
-          <article class="project-card">
-            <a class="project-visual project-visual-three" href="#contact" aria-label="Discuss the Common Ground project">
-              <div class="common-ui">
-                <span class="common-label">COMMON GROUND / NYC</span>
-                <span class="common-time">08:42<span>AM</span></span>
-                <span class="common-weather">A good day to get outside.</span>
-                <div class="weather-line"></div>
-              </div>
-              <span class="project-arrow" aria-hidden="true">↗</span>
-            </a>
-            <div class="project-details">
-              <div><h3>Common Ground</h3><p>Your neighborhood, together</p></div>
-              <span class="project-type">Strategy & build · 2023</span>
+          <article class="project-card" data-category="redesign" data-project-title="Local business refresh" data-project-kind="Redesign" data-project-summary="A friendlier first impression for a neighborhood business, with the most useful information and next steps brought into focus." data-project-focus="Simpler navigation, local trust signals, and a clear path to get in touch.">
+            <div class="project-card-head"><span class="project-number">03</span><div class="project-client-label"><span>REDESIGN CONCEPT</span><strong>COMMON GROUND</strong></div><button class="project-quick-view" type="button">VIEW CONCEPT <span aria-hidden="true">↗</span></button></div>
+            <div class="project-card-gallery">
+              <div class="project-gallery-rail" aria-hidden="true"><div class="project-gallery-shot project-shot-five"><span>YOUR NEIGHBOURHOOD</span><strong>A warmer welcome.</strong><i></i></div><div class="project-gallery-shot project-shot-six"><span>LOCAL / OPEN / HERE</span><strong>Everything in its place.</strong><i></i></div></div>
+              <a class="project-visual project-visual-three" href="project-refresh.html" aria-label="View the local business redesign concept">
+                <div class="common-ui">
+                  <span class="common-label">LOCAL BUSINESS / WEBSITE REFRESH</span>
+                  <span class="common-time">Hello<span>there</span></span>
+                  <span class="common-weather">A clearer first impression starts here.</span>
+                  <div class="weather-line"></div>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </a>
             </div>
           </article>
+          <article class="project-card" data-category="wordpress" data-project-title="Northline Architecture" data-project-kind="WordPress" data-project-summary="An image-led portfolio concept for an independent architecture practice, balancing project photography with concise, useful project context." data-project-focus="Editorial project showcases, accessible image layouts, and an easy-to-update portfolio.">
+            <div class="project-card-head"><span class="project-number">04</span><div class="project-client-label"><span>WORDPRESS CONCEPT</span><strong>NORTHLINE ARCHITECTURE</strong></div><button class="project-quick-view" type="button">VIEW CONCEPT <span aria-hidden="true">↗</span></button></div>
+            <div class="project-card-gallery">
+              <div class="project-gallery-rail" aria-hidden="true"><div class="project-gallery-shot project-shot-seven"><span>SELECTED WORK</span><strong>Spaces with a point of view.</strong><i></i></div><div class="project-gallery-shot project-shot-eight"><span>FORM / MATERIAL / LIGHT</span><strong>Built with intention.</strong><i></i></div></div>
+              <button class="project-visual project-visual-four project-preview-button" type="button" aria-label="Quick view: Northline Architecture"><div class="concept-four"><span>NORTHLINE / ARCHITECTURE</span><strong>Spaces<br />with a<br /><em>point of view.</em></strong><small>Selected work</small></div><span class="project-arrow" aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+          <article class="project-card" data-category="woocommerce" data-project-title="Morrow Ritual" data-project-kind="WooCommerce" data-project-summary="A calm direct-to-customer shop concept for a modern self-care range, presenting product benefits without overwhelming the shopping experience." data-project-focus="Mobile-first product pages, thoughtful merchandising, and clear cart and checkout steps.">
+            <div class="project-card-head"><span class="project-number">05</span><div class="project-client-label"><span>WOOCOMMERCE CONCEPT</span><strong>MORROW RITUAL</strong></div><button class="project-quick-view" type="button">VIEW CONCEPT <span aria-hidden="true">↗</span></button></div>
+            <div class="project-card-gallery">
+              <div class="project-gallery-rail" aria-hidden="true"><div class="project-gallery-shot project-shot-nine"><span>DAILY CARE, MADE SIMPLE</span><strong>Make room for you.</strong><i></i></div><div class="project-gallery-shot project-shot-ten"><span>THE RITUAL EDIT</span><strong>A little time, well spent.</strong><i></i></div></div>
+              <button class="project-visual project-visual-five project-preview-button" type="button" aria-label="Quick view: Morrow Ritual"><div class="concept-five"><span>MORROW RITUAL</span><strong>Make room<br />for <i>you.</i></strong><small>Daily care, made simple</small><b>SHOP THE COLLECTION&nbsp; ↗</b></div><span class="project-arrow" aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+          <article class="project-card" data-category="redesign" data-project-title="Civic Commons" data-project-kind="Redesign" data-project-summary="A community organization redesign concept that puts programs, local stories, and ways to participate within easy reach." data-project-focus="Clear audience paths, accessible storytelling, and more discoverable community resources.">
+            <div class="project-card-head"><span class="project-number">06</span><div class="project-client-label"><span>REDESIGN CONCEPT</span><strong>CIVIC COMMONS</strong></div><button class="project-quick-view" type="button">VIEW CONCEPT <span aria-hidden="true">↗</span></button></div>
+            <div class="project-card-gallery">
+              <div class="project-gallery-rail" aria-hidden="true"><div class="project-gallery-shot project-shot-eleven"><span>PEOPLE / IDEAS / ACTION</span><strong>Good things happen together.</strong><i></i></div><div class="project-gallery-shot project-shot-twelve"><span>FIND YOUR PLACE</span><strong>Make your community.</strong><i></i></div></div>
+              <button class="project-visual project-visual-six project-preview-button" type="button" aria-label="Quick view: Civic Commons"><div class="concept-six"><span>GOOD THINGS HAPPEN TOGETHER</span><strong>Make your<br />place in the<br /><i>community.</i></strong><small>People · Ideas · Action</small></div><span class="project-arrow" aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+        </div>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="project-filter is-active" type="button" data-filter="all" aria-pressed="true">All samples <span data-filter-count="all"></span></button>
+          <button class="project-filter" type="button" data-filter="wordpress" aria-pressed="false">WordPress <span data-filter-count="wordpress"></span></button>
+          <button class="project-filter" type="button" data-filter="woocommerce" data-label="WooCommerce" aria-pressed="false">WooCommerce <span data-filter-count="woocommerce"></span></button>
+          <button class="project-filter" type="button" data-filter="redesign" data-label="redesign" aria-pressed="false">Redesign <span data-filter-count="redesign"></span></button>
+          <span class="filter-result" id="filter-result" aria-live="polite">Showing all samples</span>
+        </div>
+        <p class="sample-note">These are illustrative design concepts, not client case studies. Replace them with your completed projects before publishing.</p>
+        <a class="text-link section-more" href="projects.html">Browse every project <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="approach section-shell section-block" id="approach" aria-labelledby="approach-title">
+        <div class="section-kicker"><span>06</span> The approach</div>
+        <div class="skills-heading">
+          <h2 id="approach-title">Clear steps.<br /><span class="accent-text">No surprises.</span></h2>
+          <p>A collaborative process that keeps the goals clear, the work focused, and you in the loop.</p>
+        </div>
+        <div class="process-explorer" data-process-explorer>
+          <ol class="process-steps" aria-label="Project stages">
+            <li><button class="process-step is-active" type="button" data-step="0" aria-pressed="true"><span>01</span><strong>Discover</strong><i aria-hidden="true">↗</i></button></li>
+            <li><button class="process-step" type="button" data-step="1" aria-pressed="false"><span>02</span><strong>Plan</strong><i aria-hidden="true">↗</i></button></li>
+            <li><button class="process-step" type="button" data-step="2" aria-pressed="false"><span>03</span><strong>Structure</strong><i aria-hidden="true">↗</i></button></li>
+            <li><button class="process-step" type="button" data-step="3" aria-pressed="false"><span>04</span><strong>Design</strong><i aria-hidden="true">↗</i></button></li>
+            <li><button class="process-step" type="button" data-step="4" aria-pressed="false"><span>05</span><strong>Develop</strong><i aria-hidden="true">↗</i></button></li>
+            <li><button class="process-step" type="button" data-step="5" aria-pressed="false"><span>06</span><strong>Launch</strong><i aria-hidden="true">↗</i></button></li>
+          </ol>
+          <article class="process-detail" aria-live="polite">
+            <div class="process-detail-top"><span class="process-index" data-process-count>01 / 06</span><span class="process-track" aria-hidden="true"><span data-process-progress></span></span></div>
+            <h3 data-process-title>Discover the real problem</h3>
+            <p data-process-description>We talk through your business, audience, goals, and the problem the website needs to solve before choosing a direction.</p>
+            <div class="process-outcome"><span>STAGE OUTCOME</span><p data-process-outcome>Shared goals, audience needs, and a clear problem to solve.</p></div>
+            <a class="text-link" href="contact.html">Start with a conversation <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <a class="text-link section-more" href="services.html">Explore services and process <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="toolkit section-shell section-block" aria-labelledby="toolkit-title">
+        <div class="section-kicker"><span>07</span> Capabilities & toolkit</div>
+        <div class="skills-heading">
+          <h2 id="toolkit-title">Purposeful tools.<br /><span class="accent-text">Thoughtful builds.</span></h2>
+          <p>The right tools should make a site easier to use, manage, and maintain—not add complexity for its own sake.</p>
+        </div>
+        <div class="toolkit-grid">
+          <article class="toolkit-card">
+            <div class="toolkit-card-top"><span>01</span><span aria-hidden="true">↗</span></div>
+            <h3>Content that stays editable</h3>
+            <p>Flexible page structures and familiar editing tools, shaped around the content your team needs to manage.</p>
+            <div class="tool-pills"><span>WordPress</span><span>Gutenberg</span><span>Custom blocks</span></div>
+          </article>
+          <article class="toolkit-card">
+            <div class="toolkit-card-top"><span>02</span><span aria-hidden="true">↗</span></div>
+            <h3>Commerce made clear</h3>
+            <p>Useful product and store experiences, with the right setup guided by your catalogue and operating needs.</p>
+            <div class="tool-pills"><span>WooCommerce</span><span>Product pages</span><span>Checkout journeys</span></div>
+          </article>
+          <article class="toolkit-card">
+            <div class="toolkit-card-top"><span>03</span><span aria-hidden="true">↗</span></div>
+            <h3>Strong web foundations</h3>
+            <p>Responsive interfaces built with accessible patterns, maintainable code, and careful cross-screen review.</p>
+            <div class="tool-pills"><span>HTML & CSS</span><span>JavaScript</span><span>Git & QA</span></div>
+          </article>
+        </div>
+        <a class="text-link section-more" href="skills.html">Explore the full skill set <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="journal-preview section-shell section-block" aria-labelledby="journal-title">
+        <div class="section-kicker"><span>08</span> Notes from the build</div>
+        <div class="projects-heading">
+          <h2 id="journal-title">Useful thoughts,<br /><span class="muted-text">not just hot takes.</span></h2>
+          <a class="text-link" href="blog.html">Visit the journal <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="journal-grid">
+          <a class="journal-card" href="article-wordpress-content.html">
+            <span class="journal-meta">CONTENT DESIGN · 6 MIN READ</span>
+            <h3>Make your WordPress site easier to update</h3>
+            <span class="journal-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="journal-card" href="article-performance.html">
+            <span class="journal-meta">PERFORMANCE · 5 MIN READ</span>
+            <h3>A practical first pass at a faster website</h3>
+            <span class="journal-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="home-faq section-shell section-block" aria-labelledby="home-faq-title">
+        <div class="section-kicker"><span>09</span> Good to know</div>
+        <div class="home-faq-layout">
+          <div><h2 id="home-faq-title">Questions before<br /><span class="accent-text">you get started?</span></h2><a class="text-link" href="faq.html">Visit all FAQs <span aria-hidden="true">↗</span></a></div>
+          <div class="faq-list">
+            <details><summary>Can I update the site myself?</summary><p>The goal is an editor experience for routine content updates. The specific WordPress blocks and controls depend on what your site needs.</p></details>
+            <details><summary>How do you decide project pricing?</summary><p>Pricing depends on the agreed deliverables, complexity, and integrations. Share your goals first so the scope can be discussed; no preset quote is implied here.</p></details>
+            <details><summary>Does the contact form send my message?</summary><p>This static portfolio prepares an email in your email app. It does not store or deliver form submissions on a server.</p></details>
+          </div>
         </div>
       </section>
 
       <section class="contact section-shell section-block" id="contact" aria-labelledby="contact-title">
-        <div class="section-kicker"><span>04</span> Your turn</div>
+        <div class="section-kicker"><span>10</span> Start a conversation</div>
         <div class="contact-layout">
           <div class="contact-copy">
-            <h2 id="contact-title">Have a good<br />one in <span class="accent-text">mind?</span></h2>
-            <p>Big idea, small question, or just want to say hi? My inbox is open.</p>
-            <a class="contact-email" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+            <span class="contact-overline"><span></span> YOUR NEXT PROJECT STARTS HERE</span>
+            <h2 id="contact-title">Let’s make your<br />next website <span class="accent-text">matter.</span></h2>
+            <p>Share what you’re planning, what needs to work better, or where you need a hand. A little context is enough to start a useful conversation.</p>
+            <ul class="contact-methods" aria-label="Contact information">
+              <li>
+                <span class="contact-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="1"></rect><path d="m4.5 7 7.5 6 7.5-6"></path></svg></span>
+                <span class="contact-method-copy"><span class="contact-method-label">EMAIL</span><a href="mailto:hello@example.com">hello@example.com</a></span>
+              </li>
+              <li>
+                <span class="contact-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3.5h3l1.5 4-2 1.5a14 14 0 0 0 5.5 5.5l1.5-2 4 1.5v3c0 1.1-.9 2-2 2A15.5 15.5 0 0 1 5 5.5c0-1.1.9-2 2-2Z"></path></svg></span>
+                <span class="contact-method-copy"><span class="contact-method-label">PHONE</span><a href="tel:+15551234567">+1 (555) 123-4567</a></span>
+              </li>
+              <li>
+                <span class="contact-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"></path><circle cx="12" cy="10" r="2.2"></circle></svg></span>
+                <span class="contact-method-copy"><span class="contact-method-label">LOCATION</span><span>Remote · Open to projects</span></span>
+              </li>
+            </ul>
+            <div class="contact-panel-bottom">
+              <nav class="contact-socials" aria-label="Social profiles">
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile placeholder — replace with your profile URL"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.1-1.5 6.1-6.8a5.3 5.3 0 0 0-1.4-3.7 4.9 4.9 0 0 0-.1-3.7s-1.2-.4-3.9 1.4a13.5 13.5 0 0 0-7.1 0C5 1 3.8 1.4 3.8 1.4a4.9 4.9 0 0 0-.1 3.7 5.3 5.3 0 0 0-1.4 3.7c0 5.3 3.1 6.5 6.1 6.8a3.4 3.4 0 0 0-.9 2.7V22"></path></svg></a>
+                <a href="https://www.linkedin.com/in/your-name/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile placeholder — replace with your profile URL"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5v11M5 4.5v.1M10 19.5v-11h4v1.6a4 4 0 0 1 7 2.7v6.7h-4v-6.2a1.8 1.8 0 0 0-3.6 0v6.2Z"></path><circle cx="5" cy="4.5" r="1.5"></circle></svg></a>
+                <a href="index.html" aria-label="Portfolio website home"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3.5 12h17M12 3a14 14 0 0 1 0 18m0-18a14 14 0 0 0 0 18"></path></svg></a>
+              </nav>
+              <a class="contact-resume-link" href="resume.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z"></path><path d="M14 3.5v4h4M9 12h6m-6 3h6"></path></svg> RESUME</a>
+            </div>
+            <p class="contact-info-note">Example contact and social details — replace these placeholders before publishing.</p>
+            </ul>
           </div>
           <form class="contact-form" id="contact-form">
-            <label for="name">Your name</label>
-            <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required />
-
-            <label for="email">Your email</label>
-            <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required />
-
-            <label for="message">A little about your project</label>
-            <textarea id="message" name="message" rows="4" placeholder="What are you working on?" required></textarea>
-
-            <button class="button button-primary form-submit" type="submit">Send a note <span aria-hidden="true">↗</span></button>
+            <div class="contact-form-heading">
+              <span>PROJECT ENQUIRY</span>
+              <h3>Tell me what you have in mind.</h3>
+              <p>Required fields are marked <span aria-hidden="true">*</span>.</p>
+            </div>
+            <div class="contact-form-grid">
+              <div class="form-field">
+                <label for="name">Your name <span aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Your email <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required />
+              </div>
+              <div class="form-field">
+                <label for="company">Company or website <span class="optional-label">(optional)</span></label>
+                <input id="company" name="company" type="text" autocomplete="organization" placeholder="Your business name or website" />
+              </div>
+              <div class="form-field">
+                <label for="project-type">What do you need?</label>
+                <select id="project-type" name="projectType">
+                  <option value="">Choose a service</option>
+                  <option>New WordPress website</option>
+                  <option>WooCommerce store</option>
+                  <option>Redesign or optimization</option>
+                  <option>Fixes or maintenance</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="budget">Budget and currency <span class="optional-label">(optional)</span></label>
+                <input id="budget" name="budget" type="text" placeholder="Only if you have a range in mind" />
+              </div>
+              <div class="form-field">
+                <label for="timeline">Preferred timing <span class="optional-label">(optional)</span></label>
+                <select id="timeline" name="timeline">
+                  <option value="">Choose a timeline (optional)</option>
+                  <option>As soon as practical</option>
+                  <option>Within 1–2 months</option>
+                  <option>Within 3–6 months</option>
+                  <option>Still exploring</option>
+                </select>
+              </div>
+              <div class="form-field form-field-wide">
+                <label for="message">A little about your project <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="4" placeholder="What are you working on?" required></textarea>
+              </div>
+            </div>
+            <div class="contact-form-actions">
+              <button class="button button-primary form-submit" type="submit">Create email draft <span aria-hidden="true">↗</span></button>
+              <span class="form-privacy-note">Your details stay in your email app until you choose to send.</span>
+            </div>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <p class="form-note">This portfolio uses an email draft rather than a server-side form. Replace the example address before publishing.</p>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-inner section-shell">
-        <a class="wordmark" href="#home" aria-label="Alex Morgan, back to top">am<span>.</span></a>
-        <p>Made with care, and a little too much coffee.</p>
-        <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
-        <span class="copyright">© <span id="year"></span> Alex Morgan</span>
-      </div>
-    </footer>
+    <footer class="site-footer" id="site-footer"></footer>
   </body>
 </html>
